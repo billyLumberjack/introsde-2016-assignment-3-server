@@ -1,13 +1,13 @@
 {
-  "name": "introsde assignment",
-  "description": "SOAP assignment",
-  "repository": "",
-  "logo": "https://avatars0.githubusercontent.com/u/11249211?v=3&s=200",
+  "name": "IntroSDE Assignment 3",
+  "description": "SOAP Web Services",
+  "repository": "https://github.com/billyLumberjack/introsde-2016-assignment-3-server",
+  "logo": "https://avatars3.githubusercontent.com/u/6636327?v=3&s=200",
   "image": "heroku/java",
   "env": {
     "HEROKU_URL": {
       "description": "The URL of this Heroku app.",
-      "value": "http://YOURAPPNAME.herokuapp.com"
+      "value": "https://sm-introsde-assignment-3.herokuapp.com/ws/people"
     }
   },
   "buildpacks": [
