@@ -56,6 +56,7 @@
 	<property name="src.dir" value="src" />
 	<property name="lib.dir" value="WebContent/WEB-INF/lib" />
 	<property name="web.dir" value="." />
+	<property name="webcontent.dir" value="WebContent" />
 
 	<!-- ================================= 
 	          target: resolve downloads the dependencies to your lib folder              
@@ -106,6 +107,12 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
+		<copy todir="${build.dir}" overwrite="true">
+			<fileset dir="${webcontent.dir}">
+				<include name="*.xml" />
+				<include name="**/*.xml" />
+			</fileset>
+		</copy>		
 	</target>
 	
 	<target name="start" depends="compile">
