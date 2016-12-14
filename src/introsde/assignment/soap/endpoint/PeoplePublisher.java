@@ -9,7 +9,7 @@ import javax.xml.ws.Endpoint;
 public class PeoplePublisher {
 	public static void main(String[] args) throws IllegalArgumentException, IOException, URISyntaxException {
 		String PROTOCOL = "http://";
-		String HOSTNAME = "127.0.0.1";//InetAddress.getLocalHost().getHostAddress();
+		String HOSTNAME = InetAddress.getLocalHost().getHostAddress();
 		String PORT = "6902";
 		String BASE_URL = "/ws/people";
 		
